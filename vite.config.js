@@ -11,7 +11,7 @@ export default defineConfig({
       template: { compilerOptions: { isCustomElement: (tag) => ['model-viewer'].includes(tag) } },
     }),
     adonisjs({
-      entrypoints: ['resources/app.ts'],
+      entrypoints: ['resources/app.ts', 'resources/js/app.js'],
       reload: ['resources/views/**/*.edge'],
     }),
   ],
